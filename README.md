@@ -81,7 +81,7 @@ KOMBAT SIMULATOR: https://github.com/Agumeri/Kombat-Simulator-jQueryMobile
   ```
   * **Crear una colección e insertar un documento a esta implicitamente**
   ```
-  db.usuarios.insert({
+  db.usuarios.insertOne({
     "nombre": "Ann",
     "Edad": "48",
     "pais": "Francia",
@@ -90,7 +90,7 @@ KOMBAT SIMULATOR: https://github.com/Agumeri/Kombat-Simulator-jQueryMobile
   ```
   * **Crear una colección explicitamente**
   ```
-  db.createCollection("comida")
+  db.collection("comida")
   ```
   *Nota: Para ver las colecciones una vez creadas usamos --->* ``` show collections ``` 
   
@@ -110,7 +110,7 @@ KOMBAT SIMULATOR: https://github.com/Agumeri/Kombat-Simulator-jQueryMobile
   *Nota: pretty() lo que hace es que cuando nos muestre la terminal la consulta, esta se vea en un formato más legible.*
   * **Cambiar datos de un documento de una colección**
   ```
-  db.usuarios.update({
+  db.usuarios.updateOne({
     "clave": "12345678"
     },
     {
