@@ -15,10 +15,10 @@ KOMBAT SIMULATOR: https://github.com/Agumeri/Kombat-Simulator-jQueryMobile
 # Estructura de MongoDB
 
   MongoDB se estrucuta por diferentes capas:
-    * El **servidor de mongo**, que es donde lo vamos a tener todo.
-    * La **base de datos**, la cual está compuesta por colecciones.
-      * Las **colecciones** son los análogos a las tablas de SQL. Dentro de estos tenemos un conjunto de documentos.
-        * Los **documentos** son los registros de las colecciones, lo que vendría a ser en SQL las filas de cada tabla. Estos tienen un formato de pares de claves y valores. Los valores de estas claves pueden ser String, Number, Array(listas), Date, Boolean y Object.
+  - El **servidor de mongo**, que es donde lo vamos a tener todo.
+  - La **base de datos**, la cual está compuesta por colecciones.
+  - Las **colecciones** son los análogos a las tablas de SQL. Dentro de estos tenemos un conjunto de documentos. La principal diferencia con las tablas de una base de datos relacional como puede ser SQL es que Mongo no nos impone un esquema rígido a la hora de almacenar documentos en una colección. 
+  - Los **documentos** son los registros de las colecciones, lo que vendría a ser en SQL las filas de cada tabla. Estos tienen un formato de pares de claves y valores. Los valores de estas claves pueden ser String, Number, Array(listas), Date, Boolean y Object. Son análogos a los objetos JSON aunque el nombre que emplean en el ámbito de mongo es BSON (ya que se trata de un JSON en binario).
   
   Un ejemplo de un documento sería el siguiente, que equivaldría a una Persona: 
   {
@@ -62,8 +62,8 @@ KOMBAT SIMULATOR: https://github.com/Agumeri/Kombat-Simulator-jQueryMobile
   sudo systemctl status mongodb
   ```
 
-## Instrucciones de MangoDB. Crear, eliminar, manejar y consultar colleciones
-  Las siguientes instrucciones son las más comunes en MangoDB. Se utilizarán siempre que se utilizar una base de datos de mangoDB:
+## Instrucciones de MongoDB. Crear, eliminar, manejar y consultar colleciones
+  Las siguientes instrucciones son las más comunes en MongoDB. Se utilizarán siempre que se utilizar una base de datos de mongoDB:
   
   * **Mostrar bases de datos existentes**
   ```
